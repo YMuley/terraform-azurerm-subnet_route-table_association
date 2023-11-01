@@ -1,3 +1,3 @@
 locals {  
-    subnet_list = {for subnet in var.subnet_list  : format("%s/%s",subnet.virtual_network_name,subnet.subnet_name) => subnet }
+    route_table = {for route_table in var.association_list  : route_table.route_table_name => route_table }
 }

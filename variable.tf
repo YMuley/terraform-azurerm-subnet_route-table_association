@@ -1,12 +1,12 @@
-variable "subnet_list" {
+variable "association_list" {
   type        = list(any)
   default     = []
   description = "list of virtual network objects"
 }
 
 variable "subnet_output" {
-  type        = any
-  default     = []
+  type        = map(any)
+  default     = {}
   description = "list of Subnet objects"
 }
 
