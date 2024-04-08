@@ -1,4 +1,4 @@
-variable "association_list" {
+variable "subnet_route_table_association_list" {
   type        = list(any)
   default     = []
   description = "list of virtual network objects"
